@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust as needed */
+}
+
+#main{
+    width: 100%;
+    columns: 5;
+    column-gap: 15px;
+    padding: 15px;
+    break-inside: avoid;
+}
+.box img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width:1200px){
+    #main{
+        columns: 4;
+    }
+}
+@media (max-width:968px){
+    #main{
+        columns: 3;
+    }
+}
+@media (max-width:730px){
+    #main{
+        columns: 2;
+    }
+}
+.card-detail,.image img{
+   border-radius: 10px; 
+}
+.card-detail{
+    border: 1px solid #ccc;
+    max-width: 100%;
+    min-height: 400px;
+}
+.image{
+    max-width: 400px;
+}
+@media (max-width:1200px){
+    .image{
+        margin: auto;
+    }
+}
+.author-card {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.author-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-info h2 {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.author-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+.card-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.custom-file-label {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 20px;
+    display: none;
+}
+
+#photo{
+  width:100px;
+  height:100px;
+  background-size:cover;
+  border-radius: 50%;
+}
+#file{
+  display:none;
+}
+#uploadbtn{
+  position:absolute;
+  height:30px;
+  width:30px;
+  padding:6px 6px;
+  border-radius:50%;
+  cursor:pointer;
+  color:#fff;
+  transform:translateX(-80%);
+  margin-top:100px;
+  background-color: grey;
+  box-shadow: 2px 4px 4px rgb(0,0,0,0.644);
+}
